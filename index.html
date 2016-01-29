@@ -3,11 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>IziTrip</title>
-  </head>
+    <style type="text/css">
+      html,
+      body {
+          margin: 0;
+          overflow: hidden;
+          height: 100%;
+      }
 
-  <body>
-    <div id="app-container"></div>
-  </body>
+      /* Scale canvas with resize attribute to full size */
+      canvas[resize] {
+          width: 100%;
+          height: 100%;
+      }
+    </style>
+</head>
 
-  <script src="target.js"></script>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+  <script type="text/javascript" src="target.js"></script>
+</body>
 </html>
