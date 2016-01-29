@@ -1,0 +1,34 @@
+{
+  "name": "izitrip",
+  "version": "1.0.0",
+  "description": "Plan your trip izily",
+  "main": "index.js",
+  "devDependencies": {
+    "babel": "^5.6.14",
+    "babel-core": "^5.0.12",
+    "babel-loader": "^5.2.2",
+    "babel-runtime": "^5.6.15",
+    "babelify": "^6.4.0",
+    "browserify": "^11.2.0",
+    "copyfiles": "^0.2.1",
+    "nodemon": "^1.7.3",
+    "rimraf": "^2.4.4",
+    "uglifyify": "^3.0.1",
+    "watchify": "^3.6.0"
+  },
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "npm run watch-js",
+    "watch-js": "watchify src/app.js -o target.js -dv -t babelify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eleaar/izitrip.git"
+  },
+  "author": "eleaar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eleaar/izitrip/issues"
+  },
+  "homepage": "https://github.com/eleaar/izitrip#readme"
+}
